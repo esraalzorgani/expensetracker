@@ -1,0 +1,222 @@
+*{
+    list-style-type:none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    text-decoration: none;
+} 
+
+
+header{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+body{
+  background-image: url(../images/bacc.png);
+}
+.logo{
+    width: 140px;
+}
+
+.a{
+    color:#7AA874;
+    text-decoration:none;
+    padding: 10px 20px;
+}
+.a:hover{
+    text-decoration: underline;
+}
+.button1
+{
+  background-color: #7AA874;
+  border: none;
+  padding : 12px 30px;
+  border-radius: 10px;
+  color : white;
+}
+.button2
+{
+  background-color: #7AA874;
+  border: none;
+  padding : 12px 30px;
+  border-radius: 10px;
+  color : rgb(255, 255, 255);
+
+}
+.p {
+  color: rgb(211, 154, 31);
+  font-size:40px;
+  margin-left: 56%;
+  position: relative;
+  bottom: 400px;
+}
+.p h1 span {
+  color: #7AA874;
+}
+.pictures{
+  width: 70%;
+}
+.about h1
+{
+  color: #7AA874;
+  text-align: center;
+}
+/*******loginlogout_page***********/
+form {
+    
+    box-shadow: 0 0 20px 9px #c9ad7452;
+    width: 450px;
+    height: 600px;
+    border-radius: 7px;
+    margin-top: 30px ;
+    margin-left: 35%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+
+  }
+  .log{
+    color: #7AA874;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  input[type="text"],[type="password"],[type="email"]
+  {
+    width: 350px;
+    height:50px;
+    margin-bottom:10px;
+    margin-left: 30px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+  }
+
+  input[type="submit"]
+  {
+    width: 350px;
+    height:50px;
+    margin-left: 27px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #7AA874; 
+    cursor: pointer;
+  }
+
+  form span
+  {
+    margin-left: 70px;
+    color: rgb(0, 0, 0);
+  }
+  form .forget
+  {
+    margin-left: 70px;
+  }
+.FCAEBOOK
+{
+  background-color: #7AA874;
+  border: none;
+  width: 42%;
+  padding : 12px 30px;
+  border-radius: 10px;
+  margin-left: 40px;
+  color : white;
+}
+.GOOGLE
+{
+  background-color: #7AA874;
+  width: 42%;
+  border: none;
+  padding : 12px 30px;
+  border-radius: 10px;
+  color : rgb(255, 255, 255);
+}
+  .line
+{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #0f0f0f;
+    padding: 0 15px;
+}
+.social_icons a span{
+  margin-left: 5px;
+  font-size: 18px;
+  background-color: #8b99a6;
+}
+/*------------------footer---------------------*/
+
+.footer {
+  padding: 40px 0;
+  background-color:#f0efef;
+  color:#7AA874;
+  width: 100%;
+  height: 20%;
+}
+
+.footer ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer ul a {
+  color:inherit;
+  text-decoration:none;
+}
+
+.footer .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+/*---------------------Chatogry-----------------------*/
+
+table td{
+  padding:20px;
+}
+.div1{
+  background-color: #f7f5f5;
+  padding:20px;
+  border-radius: 10px;
+}
+.div1:hover{
+  transform:scale(0.9);
+}
+p{
+   font-size:15px;
+}
+.footer{
+   
+   font-size:20px;
+   padding:10px
+}
