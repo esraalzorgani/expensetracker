@@ -2,8 +2,8 @@
 <!----------------20180107887-----
    صفحة لعرض------->
 <?php
-require_once 'config.php';
 session_start();
+require_once 'config.php';
 
 
 $sql = "SELECT expense.*, category.category_name 
@@ -12,6 +12,7 @@ $sql = "SELECT expense.*, category.category_name
         WHERE expense.user_id = '{$_SESSION['userid']}'";
 $result = mysqli_query($con, $sql);
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -39,8 +40,9 @@ $result = mysqli_query($con, $sql);
             <a class="a" href="home2.php"> HOME</a> 
             <a class="a" href="aboutus.html">ABOUT US</a> 
             <a class="a" href="category.php">CATEGORY</a> 
-            <a class="a" href="Reports.html">REPORTS</a>
-            <a class="a" href="addexpense.php">Expense</a>
+            <a  class="a"href="addexpense.php">EXPENSE</a>
+            <a  class="a"href="displayexpenses.php">SHOW EXPENSE</a>
+            <a  class="a"href="search.php"> EXPENSE RESEARCH</a>
             <a class="a" href="logout.php">LOGOUT</a>
         </nav>
 
@@ -61,7 +63,8 @@ $result = mysqli_query($con, $sql);
             <th>حذف</th>
         </tr>
         <?php
-        if (mysqli_num_rows($result) > 0) {
+        if (mysqli_num_rows($result) > 0)
+        {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
                 echo "<td>" . $row["category_name"] . "</td>"; 

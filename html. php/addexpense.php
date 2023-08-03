@@ -30,7 +30,6 @@ if (isset($_POST['submit'])){
     $_SESSION['category_id'] = $categoryData['category_id'];
 
     try {
-
         mysqli_begin_transaction($con);
 
         if ($Amount > $_SESSION['category_amount'])
@@ -85,8 +84,9 @@ if (isset($_POST['submit'])){
             <a class="a" href="home2.php"> HOME</a> 
             <a class="a" href="aboutus.html">ABOUT US</a> 
             <a class="a" href="category.php">CATEGORY</a> 
-            <a class="a" href="Reports.html">REPORTS</a>
-            <a  class="a"href="addexpense.php">Expense</a>
+            <a  class="a"href="addexpense.php">EXPENSE</a>
+            <a  class="a"href="displayexpenses.php">SHOW EXPENSE</a>
+            <a  class="a"href="search.php"> EXPENSE RESEARCH</a>
             <a class="a" href="logout.php">LOGOUT</a>
         </nav>
 
@@ -106,10 +106,6 @@ if (isset($_POST['submit'])){
             <input type="text" name="PaymentMethod" placeholder="Payment  Method"> <br>
             <input type="text" name="Note" placeholder="Note"> <br>
             <input type="submit" name="submit" value="insert"> <br>
-
-            <center><span><a href="displayexpenses.php">عرض المصاريف </a><span></center>
-            <center><span><a href="search.php">البحث</a><span></center>
-        
     </main>
 
     <!-------------------------------------FOOTER----------------------------------------------------->

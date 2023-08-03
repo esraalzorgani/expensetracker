@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         $query = "UPDATE expense SET category_id='$CategoryName', Amount='$Amount', date='$Date', PaymentMethod='$PaymentMethod', Note='$Note' WHERE expense_id='$id_category' AND user_id='$id'";
         $result = mysqli_query($con, $query);
 
-        if ($result) {
+        if ($result){
             header('location: displayexpenses.php');
             exit();
         } else {
@@ -35,7 +35,8 @@ if (isset($_POST['submit'])) {
 }
 
 
-if (isset($_GET['id'])) {
+if (isset($_GET['id']))
+{
     $id_category = $_GET['id'];
     $user_id = $_SESSION['userid'];
 
@@ -65,13 +66,15 @@ if (isset($_GET['id'])) {
     <header>
         <img class="logo" alt="esra alzorgani" src="../images/logoo.png" />
         <nav class="header1">
-            <a class="a" href="home2.php"> HOME</a>
-            <a class="a" href="aboutus.html">ABOUT US</a>
-            <a class="a" href="category.php">CATEGORY</a>
-            <a class="a" href="Reports.html">REPORTS</a>
-            <a class="a" href="addexpense.php">Expense</a>
+            <a class="a" href="home2.php"> HOME</a> 
+            <a class="a" href="aboutus.html">ABOUT US</a> 
+            <a class="a" href="category.php">CATEGORY</a> 
+            <a  class="a"href="addexpense.php">EXPENSE</a>
+            <a  class="a"href="displayexpenses.php">SHOW EXPENSE</a>
+            <a  class="a"href="search.php"> EXPENSE RESEARCH</a>
             <a class="a" href="logout.php">LOGOUT</a>
         </nav>
+
         <?php
             echo 'User name :- '. $_SESSION['username'];
         ?>

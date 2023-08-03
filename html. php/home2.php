@@ -22,8 +22,8 @@
                           <a  class="a" href="home2.php"> HOME</a> 
                           <a  class="a"href="aboutus.html" >ABOUT US</a> 
                           <a  class="a"href="category.php" >CATEGORY</a> 
-                          <a  class="a"href="Reports.html">REPORTS</a>
-                          <a  class="a"href="addexpense.php">Expense</a>
+                          <a  class="a"href="addexpense.php">EXPENSE</a>
+                          <a  class="a"href="review.php" >REVIEW</a> 
                           <a  class="a"href="logout.php">LOGOUT</a>
                           
                       </nav> 

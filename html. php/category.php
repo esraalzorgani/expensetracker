@@ -1,6 +1,5 @@
 <!----------------ESRA ALZORGANI------------>
-<!----------------20180107887-----
-   صفحة لإضافة فئة------->
+<!----------------20180107887-------صفحة لإضافة فئة------->
 <?php
 require_once 'config.php';
 
@@ -50,9 +49,9 @@ if (isset($_POST['submit'])) {
         <img class="logo" alt="esra alzorgani" src="../images/logoo.png" />
         <nav class="header1">
             <a class="a" href="home2.php"> HOME</a>
-            <a class="a" href="aboutus.html">ABOUT US</a>
-            <a class="a" href="category.php">CATEGORY</a>
-            <a class="a" href="Reports.html">REPORTS</a>
+            <a class="a" href="category.php">ADD CATEGORY</a>
+            <a class="a" href="updateca.php">EDIT CATEGORY</a>
+            <a class="a" href="transfer.php">TRANSFER</a>
             <a class="a" href="logout.php">LOGOUT</a>
         </nav>
         <?php
@@ -67,8 +66,6 @@ if (isset($_POST['submit'])) {
             <input type="text" name="Amount" placeholder="Amount" required> <br>
             <input type="text" name="Note" placeholder="Note"> <br>
             <input type="submit" name="submit" value="Insert"> <br>
-            <span>Do you want to edit categories?</span>
-            <center><span><a href="updateca.php">Edit Category</a></span></center>
         </form>
     </main>
 

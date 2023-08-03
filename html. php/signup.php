@@ -1,3 +1,5 @@
+<!----------------ESRA ALZORGANI------------>
+<!----------------20180107887----صفحة تسجيل مستخدم جديد---->
 <?php 
        require_once 'config.php'; 
         $wrong_message = false;
@@ -63,7 +65,6 @@
                 {
                   echo '<p class="wrong-login-message" >the username or email is take it try another one.</p>';
                 }
-                
                 else{
                   if( $password == $confirmpassword )
                     $query = "INSERT INTO user (user_name,u_email, u_password) VALUES('$username','$email','$password')";
@@ -91,14 +92,14 @@
                       <a class="a"href="Reports.html">REPORTS</a>
                   </nav>  
                   <nav>
-                  <button  class="button1" type="button"> <a href="login.html">log in</a></button>
-                  <button  class="button2" type="button"><a href="signup.html">Sign up</a></button>
+                  <button  class="button1" type="button"> <a href="login.php">log in</a></button>
+                  <button  class="button2" type="button"><a href="signup.php">Sign up</a></button>
                 </nav>
         </header>
  <!---------------------------------------form------------------------------------------------->
        <main>
        <?php if ($sign_up_fail){ ?>
-        <form method="post" action="" calss="formbox">
+        <form method="post" action="" calss="formLOG">
             <h2 class="log">Sign up</h2>
             <input type="text" placeholder="UserName" name="username" required > <br>
 

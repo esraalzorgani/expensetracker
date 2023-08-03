@@ -30,22 +30,43 @@ body{
 .a:hover{
     text-decoration: underline;
 }
-.button1
-{
-  background-color: #7AA874;
-  border: none;
-  padding : 12px 30px;
-  border-radius: 10px;
-  color : white;
-}
-.button2
-{
-  background-color: #7AA874;
-  border: none;
-  padding : 12px 30px;
-  border-radius: 10px;
-  color : rgb(255, 255, 255);
 
+
+.button1 {
+  background-color: #7AA874;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #5D8E63; /* لون عند التحوّل (hover) */
+}
+
+.button1:visited {
+  background-color: #7AA874; /* لون بعد الزيارة */
+}
+
+/* زرّ تسجيل الدخول */
+.button2 {
+  background-color: #7AA874;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+  background-color: #4F8062; /* لون عند التحوّل (hover) */
+}
+
+.button2:visited {
+  background-color: #7AA874; /* لون بعد الزيارة */
 }
 .p {
   color: rgb(211, 154, 31);

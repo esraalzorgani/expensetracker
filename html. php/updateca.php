@@ -35,12 +35,11 @@
                 <header >
                     <img class ="logo" alt="esra alzorgani" src="../images/logoo.png" />
                         <nav class="header1">
-                              <a  class="a" href="home2.php"> HOME</a> 
-                              <a  class="a"href="aboutus.html" >ABOUT US</a> 
-                              <a  class="a"href="category.php" >CATEGORY</a> 
-                              <a  class="a"href="Reports.html">REPORTS</a>
-                              <a  class="a"href="addexpense.php">Expense</a>
-                              <a  class="a"href="logout.php">LOGOUT</a>
+                        <a class="a" href="home2.php"> HOME</a>
+            <a class="a" href="category.php">ADD CATEGORY</a>
+            <a class="a" href="updateca.php">EDIT CATEGORY</a>
+            <a class="a" href="transfer.php">TRANSFER</a>
+            <a class="a" href="logout.php">LOGOUT</a>
                           </nav>  
                           <?php
                 echo 'User name :- '. $_SESSION['username'];
@@ -58,9 +57,6 @@
                     <input type="text" name="Note" placeholder="Note"  > <br>
                     <input type="submit"name="submit" value="Edit"> <br>
                     <br>
-                    <span>Do you want to add a category?</span>
-                    <br>
-                    <center><span><a href="category.php">insert Category</a><span></center>
 
                 </form>
             </main>
